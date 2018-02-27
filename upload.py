@@ -35,7 +35,8 @@ def upload_file():
 
 
         if weibo.check_login_status():
-            util.delete_config()
+            # util.delete_config()
+            util.alert('登录成功!')
         else:
             util.alert('登录失败，请重试!')
             sys.exit(0)
